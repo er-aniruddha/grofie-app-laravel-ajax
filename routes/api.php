@@ -19,7 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-Route::post('add/order/address','apps\AddressController@add_o_address');
+Route::post('add/address','apps\AddressController@add_address');
 
 Route::get('apps/add/account/address/{user_id}/{distance}/{duration}/{select_city}/{store_id}/{long}/{lat}/{place_name}/{landmark}/{alt_phone}','apps\AddressController@add_a_address');
 //this route to show stores on app to select
