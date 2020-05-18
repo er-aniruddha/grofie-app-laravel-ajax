@@ -30,8 +30,7 @@ $(document).ready(function(){
                         if (data.products[count].product_offers > 0) {
                             $("#product-list").append('<div class="cat-each">'
                                 + '<div class="product"><div class="product-header">'
-                                + '<a href={{ url(' / apps / show - single - product')}}/' + data.products[count].product_id + '>'
-                                + '<img class="img-fluid" src="http://grofie.in/' + data.products[count].product_image_main + '" alt=""></a>'
+                                + '<img class="img-fluid" src="http://grofie.in/' + data.products[count].product_image_main + '" alt="">'
                                 + '</div><div class="product-body">'
                                 + '<h5>' + data.products[count].product_name + '</h5>'
                                 + '<h6><span class="mdi mdi-approval"></span> Unite - <span>' + data.products[count].unit_name_sm + '</span></h6>'
@@ -42,13 +41,12 @@ $(document).ready(function(){
                                 + '<span class="badge badge-danger">' + data.products[count].product_offers + '% OFF</span>'
                                 + '</p>'
                                 + '<p class="price">Rs. ' + data.products[count].product_sell_price_after_offer + '</p>'
-                            + '<button type="button" class="btn add-to-cart" data-url={{url('apps / single / add - to - cart')}}/' + data.products[count].product_id + '/1><i class="mdi mdi-cart-outline"></i> buy</button><div class="clearfix"></div></div></div></div>');
+                            + '<button type="button" class="btn add-to-cart" data-url={{url('apps/single/add-to-cart')}}/'+data.products[count].product_id+'/1><i class="mdi mdi-cart-outline"></i> buy</button><div class="clearfix"></div></div></div></div>');
                         }
                         else {
                             $("#product-list").append('<div class="cat-each">'
-                                + '<div class="product"><div class="product-header">'
-                                + '<a href={{ url(' / apps / show - single - product')}}/' + data.products[count].product_id + '>'
-                                + '<img class="img-fluid" src="http://grofie.in/' + data.products[count].product_image_main + '" alt=""></a>'
+                                + '<div class="product"><div class="product-header">'                                
+                                + '<img class="img-fluid" src="http://grofie.in/' + data.products[count].product_image_main + '" alt="">'
                                 + '</div><div class="product-body">'
                                 + '<h5>' + data.products[count].product_name + '</h5>'
                                 + '<h6><span class="mdi mdi-approval"></span> Unite - <span>' + data.products[count].unit_name_sm + '</span></h6>'
@@ -60,16 +58,15 @@ $(document).ready(function(){
                                 + '<p class="price">Rs. ' + data.products[count].product_sell_price + '</p>'
                                 + '<span class="regular-price"></span>'
                                 + '<span class="badge badge-danger"></span>'
-                            + '<button type="button" class="btn add-to-cart" data-url={{url('apps / single / add - to - cart')}}/' + data.products[count].product_id + '/1><i class="mdi mdi-cart-outline"></i> buy</button><div class="clearfix"></div></div></div></div>');
+                            + '<button type="button" class="btn add-to-cart" data-url={{url('apps/single/add-to-cart')}}/'+data.products[count].product_id+'/1><i class="mdi mdi-cart-outline"></i> buy</button><div class="clearfix"></div></div></div></div>');
                         }
                     }
                     /*Active and In hand Stoc Products */
                     else {
                         if (data.products[count].product_offers > 0) {
                             $("#product-list").append('<div class="cat-each not-aviable">'
-                                + '<div class="product"><div class="product-header">'
-                                + '<a href={{ url(' / apps / show - single - product')}}/' + data.products[count].product_id + '>'
-                                + '<img class="img-fluid" src="http://grofie.in/' + data.products[count].product_image_main + '" alt=""></a>'
+                                + '<div class="product"><div class="product-header">'                               
+                                + '<img class="img-fluid" src="http://grofie.in/' + data.products[count].product_image_main + '" alt="">'
                                 + '</div><div class="product-body">'
                                 + '<h5>' + data.products[count].product_name + '</h5>'
                                 + '<h6><span class="mdi mdi-approval"></span> Unite - <span>' + data.products[count].unit_name_sm + '</span></h6>'
@@ -80,13 +77,12 @@ $(document).ready(function(){
                                 + '<span class="badge badge-danger">' + data.products[count].product_offers + '% OFF</span>'
                                 + '</p>'
                                 + '<p class="price">Rs. ' + data.products[count].product_sell_price_after_offer + '</p>'
-                            + '<button type="button" class="btn add-to-cart" data-url={{url('apps / single / add - to - cart')}}/' + data.products[count].product_id + '/1><i class="mdi mdi-cart-outline"></i> buy</button><div class="clearfix"></div></div></div></div>');
+                            + '<button type="button" class="btn add-to-cart" data-url={{url('apps/single/add-to-cart')}}/'+data.products[count].product_id+'/1><i class="mdi mdi-cart-outline"></i> buy</button><div class="clearfix"></div></div></div></div>');
                         }
                         else {
                             $("#product-list").append('<div class="cat-each not-aviable">'
-                                + '<div class="product"><div class="product-header">'
-                                + '<a href={{ url(' / apps / show - single - product')}}/' + data.products[count].product_id + '>'
-                                + '<img class="img-fluid" src="http://grofie.in/' + data.products[count].product_image_main + '" alt=""></a>'
+                                + '<div class="product"><div class="product-header">'                               
+                                + '<img class="img-fluid" src="http://grofie.in/' + data.products[count].product_image_main + '" alt="">'
                                 + '</div><div class="product-body">'
                                 + '<h5>' + data.products[count].product_name + '</h5>'
                                 + '<h6><span class="mdi mdi-approval"></span> Unite - <span>' + data.products[count].unit_name_sm + '</span></h6>'
@@ -98,7 +94,7 @@ $(document).ready(function(){
                                 + '<p class="price">Rs. ' + data.products[count].product_sell_price + '</p>'
                                 + '<span class="regular-price"></span>'
                                 + '<span class="badge badge-danger"></span>'
-                            + '<button type="button" class="btn add-to-cart" data-url={{url('apps / single / add - to - cart')}}/' + data.products[count].product_id + '/1><i class="mdi mdi-cart-outline"></i> buy</button><div class="clearfix"></div></div></div></div>');
+                            + '<button type="button" class="btn add-to-cart" data-url={{url('apps/single/add-to-cart')}}/'+data.products[count].product_id+'/1><i class="mdi mdi-cart-outline"></i> buy</button><div class="clearfix"></div></div></div></div>');
                         }
                     }
                     pro_id_after_load = data.products[count].product_id;  
@@ -154,9 +150,8 @@ $(document).ready(function(){
                         if(data.moreProducts[count].product_offers > 0){
 
                             $("#product-list").append('<div class="cat-each">'
-                            +'<div class="product"><div class="product-header">'
-                            +'<a href={{ url('/apps/show-single-product')}}/'+data.moreProducts[count].product_id+'>'
-                            +'<img class="img-fluid" src="http://grofie.in/'+data.moreProducts[count].product_image_main+'" alt=""></a>'
+                            +'<div class="product"><div class="product-header">'                           
+                            +'<img class="img-fluid" src="http://grofie.in/'+data.moreProducts[count].product_image_main+'" alt="">'
                             +'</div><div class="product-body">'
                             +'<h5>'+data.moreProducts[count].product_name+'</h5>'
                             +'<h6><span class="mdi mdi-approval"></span> Unite - <span>'+data.moreProducts[count].unit_name_sm+'</span></h6>'
@@ -172,9 +167,8 @@ $(document).ready(function(){
                         else{ 
 
                             $("#product-list").append('<div class="cat-each">'
-                            +'<div class="product"><div class="product-header">'
-                            +'<a href={{ url('/apps/show-single-product')}}/'+data.moreProducts[count].product_id+'>'
-                            +'<img class="img-fluid" src="http://grofie.in/'+data.moreProducts[count].product_image_main+'" alt=""></a>'
+                            +'<div class="product"><div class="product-header">'                           
+                            +'<img class="img-fluid" src="http://grofie.in/'+data.moreProducts[count].product_image_main+'" alt="">'
                             +'</div><div class="product-body">'
                             +'<h5>'+data.moreProducts[count].product_name+'</h5>'
                             +'<h6><span class="mdi mdi-approval"></span> Unite - <span>'+data.moreProducts[count].unit_name_sm+'</span></h6>'
@@ -196,8 +190,7 @@ $(document).ready(function(){
                         if(data.moreProducts[count].product_offers > 0){
                             $("#product-list").append('<div class="cat-each not-aviable">'
                             +'<div class="product"><div class="product-header">'
-                            +'<a href={{ url('/apps/show-single-product')}}/'+data.moreProducts[count].product_id+'>'
-                            +'<img class="img-fluid" src="http://grofie.in/'+data.moreProducts[count].product_image_main+'" alt=""></a>'
+                            +'<img class="img-fluid" src="http://grofie.in/'+data.moreProducts[count].product_image_main+'" alt="">'
                             +'</div><div class="product-body">'
                             +'<h5>'+data.moreProducts[count].product_name+'</h5>'
                             +'<h6><span class="mdi mdi-approval"></span> Unite - <span>'+data.moreProducts[count].unit_name_sm+'</span></h6>'
@@ -214,8 +207,7 @@ $(document).ready(function(){
                         else{ 
                             $("#product-list").append('<div class="cat-each not-aviable">'
                             +'<div class="product"><div class="product-header">'
-                            +'<a href={{ url('/apps/show-single-product')}}/'+data.moreProducts[count].product_id+'>'
-                            +'<img class="img-fluid" src="http://grofie.in/'+data.moreProducts[count].product_image_main+'" alt=""></a>'
+                            +'<img class="img-fluid" src="http://grofie.in/'+data.moreProducts[count].product_image_main+'" alt="">'
                             +'</div><div class="product-body">'
                             +'<h5>'+data.moreProducts[count].product_name+'</h5>'
                             +'<h6><span class="mdi mdi-approval"></span> Unite - <span>'+data.moreProducts[count].unit_name_sm+'</span></h6>'
